@@ -59,10 +59,10 @@ export default function Contact() {
           <CardContent className="p-8 space-y-6">
             <h2 className="text-2xl font-bold">Get in Touch</h2>
             <p className="text-muted-foreground leading-relaxed">
-              Whether you have questions about how RosterMind works, need help with your account, want to report a technical issue, or have suggestions for improving our platform, we'd love to hear from you.
+              Whether you have questions about how POUD works, need help with your account, want to report a technical issue, or have suggestions for improving our platform, we'd love to hear from you.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Our support team is dedicated to ensuring you have the best possible experience on RosterMind Fantasy Sports. We take all feedback seriously and use it to continuously improve our platform.
+              Our support team is dedicated to ensuring you have the best possible experience on POUD Fantasy Sports. We take all feedback seriously and use it to continuously improve our platform.
             </p>
 
             <div className="space-y-4 pt-4">
@@ -107,7 +107,7 @@ export default function Contact() {
 
         <div className="mt-8 p-6 bg-muted/50 rounded-lg">
           <p className="text-sm text-muted-foreground text-center">
-            <strong>Note:</strong> RosterMind is an independent fantasy sports platform and is not affiliated with the BCCI, ICC, IPL, or any official cricket organization. For inquiries related to official cricket matters, please contact the respective organizations directly.
+            <strong>Note:</strong> POUD is an independent fantasy sports platform and is not affiliated with the BCCI, ICC, IPL, or any official cricket organization. For inquiries related to official cricket matters, please contact the respective organizations directly.
           </p>
         </div>
       </div>

@@ -1,8 +1,10 @@
-# 🏏 RosterMind Fantasy Sports
+# 🏏 POUD Fantasy Sports
 
-**India's first 100% free, skill-only fantasy cricket platform**
+**POUD INFRASTRUCTURES PRIVATE LIMITED**
 
-RosterMind Fantasy Sports is a modern web application built with Node.js, Express, React, and tRPC that allows cricket fans to create fantasy teams, join contests, and compete based purely on skill—no payments, no luck, just strategy.
+*India's premier 100% free, skill-only fantasy cricket platform*
+
+POUD Fantasy Sports is a modern web application built with Node.js, Express, React, and tRPC that allows cricket fans to create fantasy teams, join contests, and compete based purely on skill—no payments, no luck, just strategy.
 
 ---
 
@@ -310,9 +312,9 @@ Proprietary - All rights reserved
 
 ## 👤 Contact
 
-**RosterMind Fantasy Sports**
+**POUD INFRASTRUCTURES PRIVATE LIMITED**
 
-- Email: support@rostermindsports.com
+- Email: support@poud.com
 - Address: A-403, Prathmesh Tower, Lower Parel West, Mumbai, Maharashtra 400013, India
 
 ---

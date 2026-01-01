@@ -32,9 +32,9 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
             {/* Logo */}
             <Link href="/">
               <a className="flex items-center gap-2 font-bold text-xl hover:text-primary transition-colors">
-                <Trophy className="h-6 w-6 text-primary" />
-                <span className="hidden sm:inline">RosterMind Fantasy Sports</span>
-                <span className="sm:hidden">RosterMind</span>
+                <img src="/poud-logo.png" alt="POUD" className="h-8 w-auto" />
+                <span className="hidden sm:inline">POUD Fantasy Sports</span>
+                <span className="sm:hidden">POUD</span>
               </a>
             </Link>
 
@@ -168,8 +168,8 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
             {/* Brand */}
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Trophy className="h-5 w-5 text-primary" />
-                <span className="font-bold">RosterMind</span>
+                <img src="/poud-logo.png" alt="POUD" className="h-6 w-auto" />
+                <span className="font-bold">POUD</span>
               </div>
               <p className="text-sm text-muted-foreground">
                 Play India's premier <strong>100% free</strong>, <strong>skill-only</strong> fantasy cricket game. No fees, no luck, no ads—just pure strategy and competition.
@@ -228,8 +228,8 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
                 <p>Lower Parel West, Mumbai</p>
                 <p>Maharashtra 400013, India</p>
                 <p className="pt-2">
-                  <a href="mailto:support@rostermindsports.com" className="hover:text-primary transition-colors">
-                    support@rostermindsports.com
+                  <a href="mailto:support@poud.com" className="hover:text-primary transition-colors">
+                    support@poud.com
                   </a>
                 </p>
               </div>
@@ -238,9 +238,9 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
 
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} RosterMind Fantasy Sports — Skill. Strategy. Glory.</p>
+            <p>© {new Date().getFullYear()} POUD INFRASTRUCTURES PRIVATE LIMITED — Skill. Strategy. Glory.</p>
             <p className="mt-2">
-              <strong>Disclaimer:</strong> RosterMind Fantasy Sports is a completely free-to-play, skill-based fantasy platform. No registration fees, subscriptions, or monetary rewards.
+              <strong>Disclaimer:</strong> POUD Fantasy Sports is a completely free-to-play, skill-based fantasy platform. No registration fees, subscriptions, or monetary rewards.
             </p>
             <p className="mt-1">
               Available to users aged <strong>18+</strong> within eligible regions. Not available in Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, Sikkim, and Tamil Nadu.

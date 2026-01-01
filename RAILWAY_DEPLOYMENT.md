@@ -1,6 +1,6 @@
-# Railway Deployment Guide for RosterMind Fantasy Sports
+# Railway Deployment Guide for POUD Fantasy Sports
 
-This guide will walk you through deploying the RosterMind Fantasy Sports platform to Railway with GitHub integration.
+This guide will walk you through deploying the POUD Fantasy Sports platform to Railway with GitHub integration.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This guide will walk you through deploying the RosterMind Fantasy Sports platfor
 ```bash
 git init
 git add .
-git commit -m "Initial commit: RosterMind Fantasy Sports platform"
+git commit -m "Initial commit: POUD Fantasy Sports platform"
 ```
 
 2. Create a new repository on GitHub (e.g., `rostermindsports`)
@@ -304,4 +304,4 @@ If a deployment causes issues:
 - [ ] Set up monitoring and alerts
 - [ ] Enable auto-deploy from GitHub
 
-Your RosterMind Fantasy Sports platform is now live on Railway! 🚀
+Your POUD Fantasy Sports platform is now live on Railway! 🚀

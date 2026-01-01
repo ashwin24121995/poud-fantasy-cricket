@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
 import { Link } from "wouter";
+import { useState, useEffect } from "react";
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,6 +17,10 @@ import {
   Target,
   TrendingUp,
   CheckCircle2,
+  Clock,
+  Zap,
+  Globe,
+  Star,
 } from "lucide-react";
 
 export default function Home() {
@@ -59,7 +63,7 @@ export default function Home() {
                 <span className="text-primary">Where Skill Rules the Game</span>
               </h1>
               <p className="text-lg text-muted-foreground">
-                Welcome to <strong>RosterMind Fantasy Sports</strong>—India's only fantasy platform built entirely on skill. No payments. No luck. Just strategy, knowledge, and bragging rights.
+                Welcome to <strong>POUD Fantasy Sports</strong>—India's premier fantasy cricket platform built entirely on skill. No payments. No luck. No ads. Just strategy, knowledge, and pure competition.
               </p>
 
               <ul className="space-y-4">
@@ -165,16 +169,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Why Choose RosterMind Section */}
+      {/* Why Choose POUD Section */}
       <section className="py-16 bg-muted/30">
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose RosterMind Fantasy Sports?
+              Why Choose POUD Fantasy Sports?
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-muted-foreground">
-              Because cricket deserves better than luck, ads, or pay-to-play mechanics. Here's how we keep it pure and competitive:
+              Because cricket deserves better than luck, ads, or pay-to-play mechanics. POUD is built by cricket fans, for cricket fans—keeping the game pure, competitive, and accessible to everyone.
             </p>
           </div>
 
@@ -184,7 +188,7 @@ export default function Home() {
                 <DollarSign className="h-16 w-16 text-primary mx-auto" />
                 <h3 className="text-xl font-semibold">Zero Fees, Full Access</h3>
                 <p className="text-muted-foreground">
-                  RosterMind is free forever. No subscriptions, no premium tiers, no tokens. Every contest is open to everyone, from Day 1—fair and square.
+                  POUD is free forever. No subscriptions, no premium tiers, no tokens, no hidden charges. Every contest is open to everyone, from Day 1—completely fair and square.
                 </p>
               </CardContent>
             </Card>
@@ -228,7 +232,7 @@ export default function Home() {
               {
                 step: "1",
                 title: "Pick a Match",
-                description: "Choose from upcoming or live cricket fixtures available on RosterMind.",
+                description: "Choose from upcoming or live cricket fixtures across all major tournaments and leagues.",
               },
               {
                 step: "2",
@@ -259,11 +263,18 @@ export default function Home() {
           </div>
 
           <div className="text-center mt-12">
-            <Link href="/how-it-works">
-              <Button size="lg" variant="outline">
-                Learn More About Fantasy Cricket
-              </Button>
-            </Link>
+            <div className="flex flex-wrap gap-4 justify-center">
+              <Link href="/how-it-works">
+                <Button size="lg" variant="outline">
+                  Learn More About Fantasy Cricket
+                </Button>
+              </Link>
+              <Link href="/faq">
+                <Button size="lg" variant="ghost">
+                  View FAQs
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

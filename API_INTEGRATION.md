@@ -1,10 +1,10 @@
-# API Integration Guide for RosterMind Fantasy Sports
+# API Integration Guide for POUD Fantasy Sports
 
 This document outlines how to integrate the external cricket match data API once the API credentials are provided.
 
 ## Overview
 
-The RosterMind platform is designed to receive real-time cricket match data, player statistics, and live scores from an external API. The database schema and tRPC endpoints are already in place to handle this data.
+The POUD platform is designed to receive real-time cricket match data, player statistics, and live scores from an external API. The database schema and tRPC endpoints are already in place to handle this data.
 
 ## Database Schema Ready for API Data
 

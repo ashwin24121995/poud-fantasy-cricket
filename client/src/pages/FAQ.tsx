@@ -10,12 +10,12 @@ import { HelpCircle } from "lucide-react";
 export default function FAQ() {
   const faqs = [
     {
-      question: "Is RosterMind really completely free?",
-      answer: "Yes! RosterMind is 100% free to use. There are no registration fees, no contest entry fees, no subscriptions, and no hidden charges. You can create teams, join contests, and compete without ever spending a rupee."
+      question: "Is POUD really completely free?",
+      answer: "Yes! POUD is 100% free to use. There are no registration fees, no contest entry fees, no subscriptions, and no hidden charges. You can create teams, join contests, and compete without ever spending a rupee."
     },
     {
       question: "Do I need to pay to win prizes?",
-      answer: "RosterMind doesn't offer cash prizes or monetary rewards. We're a skill-based platform focused on competition, rankings, and bragging rights. Since there's no money involved, there's also no financial risk."
+      answer: "POUD doesn't offer cash prizes or monetary rewards. We're a skill-based platform focused on competition, rankings, and bragging rights. Since there's no money involved, there's also no financial risk."
     },
     {
       question: "How do I create a fantasy team?",
@@ -38,8 +38,8 @@ export default function FAQ() {
       answer: "If a match is cancelled or abandoned, your team entry is simply reset. Since there's no money involved, there are no refunds or credits to process — you can just create a new team for another match."
     },
     {
-      question: "Is RosterMind legal in India?",
-      answer: "Yes, RosterMind is legal in most of India. However, we're not available in states where fantasy sports platforms are restricted: Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, Telangana, and Tamil Nadu. Users must be 18 or older to participate."
+      question: "Is POUD legal in India?",
+      answer: "Yes, POUD is legal in most of India. However, we're not available in states where fantasy sports platforms are restricted: Andhra Pradesh, Assam, Nagaland, Odisha, Sikkim, Telangana, and Tamil Nadu. Users must be 18 or older to participate."
     },
     {
       question: "How do I join a contest?",
@@ -63,19 +63,19 @@ export default function FAQ() {
     },
     {
       question: "Can I play on mobile?",
-      answer: "Yes! RosterMind is a web-based platform that works on any device with a modern browser — desktop, tablet, or mobile. There's no app to download; just visit our website and start playing."
+      answer: "Yes! POUD is a web-based platform that works on any device with a modern browser — desktop, tablet, or mobile. There's no app to download; just visit our website and start playing."
     },
     {
       question: "What cricket formats are supported?",
       answer: "We support T20, ODI, T10, and Test match formats. The scoring rules are tailored to each format to ensure fair and accurate point calculations based on the match type."
     },
     {
-      question: "Are there any ads on RosterMind?",
-      answer: "No. RosterMind is completely ad-free. We don't show advertisements, sponsored content, or promotional banners. Our platform is focused entirely on providing a clean, distraction-free fantasy cricket experience."
+      question: "Are there any ads on POUD?",
+      answer: "No. POUD is completely ad-free. We don't show advertisements, sponsored content, or promotional banners. Our platform is focused entirely on providing a clean, distraction-free fantasy cricket experience."
     },
     {
-      question: "What makes RosterMind different from other fantasy platforms?",
-      answer: "Unlike other platforms, RosterMind is completely free (no entry fees), has no cash prizes (no financial risk), and is purely skill-based (no luck or paid advantages). We're built for cricket fans who want to compete based on knowledge, not wallet size."
+      question: "What makes POUD different from other fantasy platforms?",
+      answer: "Unlike other platforms, POUD is completely free (no entry fees), has no cash prizes (no financial risk), and is purely skill-based (no luck or paid advantages). We're built for cricket fans who want to compete based on knowledge, not wallet size."
     },
     {
       question: "Can I play with friends?",
@@ -92,7 +92,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-muted-foreground">
-            Everything you need to know about RosterMind Fantasy Sports
+            Everything you need to know about POUD Fantasy Sports
           </p>
         </div>
 
