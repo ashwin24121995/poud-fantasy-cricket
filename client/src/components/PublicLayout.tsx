@@ -31,10 +31,8 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
           <div className="flex h-16 items-center justify-between">
             {/* Logo */}
             <Link href="/">
-              <a className="flex items-center gap-2 font-bold text-xl hover:text-primary transition-colors">
-                <img src="/poud-logo.png" alt="POUD" className="h-8 w-auto" />
-                <span className="hidden sm:inline">POUD Fantasy Sports</span>
-                <span className="sm:hidden">POUD</span>
+              <a className="flex items-center hover:opacity-80 transition-opacity">
+                <img src="/poud-logo.png" alt="POUD" className="h-10 w-auto" />
               </a>
             </Link>
 
@@ -167,9 +165,8 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="space-y-3">
-              <div className="flex items-center gap-2">
-                <img src="/poud-logo.png" alt="POUD" className="h-6 w-auto" />
-                <span className="font-bold">POUD</span>
+              <div className="flex items-center">
+                <img src="/poud-logo.png" alt="POUD" className="h-8 w-auto" />
               </div>
               <p className="text-sm text-muted-foreground">
                 Play India's premier <strong>100% free</strong>, <strong>skill-only</strong> fantasy cricket game. No fees, no luck, no ads—just pure strategy and competition.

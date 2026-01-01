@@ -31,7 +31,7 @@ const translations = {
     error: "You must be 18 or older and located in an eligible region in India to use POUD Fantasy Sports.",
     disclaimer: "By continuing you confirm eligibility (18+, India where fantasy sports is allowed) and agree to our Terms & Privacy. Not available in",
     badge: "18+ · India Only",
-    welcome: "Welcome to POUD Fantasy Sports"
+    welcome: "Welcome to POUD"
   },
   hi: {
     step1Title: "अपनी भाषा चुनें",
@@ -44,7 +44,7 @@ const translations = {
     error: "POUD Fantasy Sports का उपयोग करने के लिए आपकी आयु 18 वर्ष या उससे अधिक होनी चाहिए और भारत के पात्र क्षेत्र में स्थित होना चाहिए।",
     disclaimer: "जारी रखने से आप पात्रता (18+, भारत जहां फैंटेसी स्पोर्ट्स की अनुमति है) की पुष्टि करते हैं और हमारी शर्तों और गोपनीयता से सहमत होते हैं। उपलब्ध नहीं है",
     badge: "18+ · केवल भारत",
-    welcome: "POUD Fantasy Sports में आपका स्वागत है"
+    welcome: "POUD में आपका स्वागत है"
   }
 };
 
@@ -79,7 +79,7 @@ export default function AgeGate({ onPass }: AgeGateProps) {
         <CardHeader className="space-y-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img src="/poud-logo.png" alt="POUD" className="h-10 w-auto" />
+              <img src="/poud-logo.png" alt="POUD" className="h-12 w-auto" />
               <div>
                 <div className="text-sm font-semibold text-muted-foreground uppercase tracking-wide">
                   {step === "language" ? "Step 1" : "Step 2"} — {step === "language" ? t.step1Title : t.step2Title}

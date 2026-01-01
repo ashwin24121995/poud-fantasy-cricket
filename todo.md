@@ -102,3 +102,10 @@
 - [x] Apply logo throughout application
 - [x] Test logo visibility and design
 - [x] Create checkpoint with new logo
+
+## Phase 13: Remove Redundant Text Next to Logo
+- [x] Update PublicLayout header to show only logo
+- [x] Update footer to show only logo
+- [x] Remove "Fantasy Sports" text next to logo
+- [x] Test all pages
+- [x] Create checkpoint
