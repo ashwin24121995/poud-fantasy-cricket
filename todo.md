@@ -84,9 +84,15 @@
 - [x] Expand home page with more comprehensive content
 - [x] Update README and documentation with new branding
 - [x] Test all changes
-- [ ] Create new checkpoint
+- [x] Create new checkpoint
 
 ## Current Issues to Fix
 
 - [x] Create orange colored POUD logo (not black/dark)
 - [x] Fix duplicate import statement in Home.tsx
+
+## Phase 11: Update Logo Color
+- [x] Create darker orange POUD logo
+- [x] Replace logo in application
+- [x] Test logo visibility across all pages
+- [x] Create checkpoint with updated logo
