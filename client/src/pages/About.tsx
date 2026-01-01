@@ -22,7 +22,7 @@ export default function About() {
                 Our Mission
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                POUD Fantasy Sports was created to bring back the true spirit of fantasy cricket — where skill, strategy, and cricket knowledge matter more than anything else. We believe that fantasy sports should be accessible to everyone, without financial barriers or pay-to-win mechanics.
+                POUD was created to bring back the true spirit of fantasy cricket — where skill, strategy, and cricket knowledge matter more than anything else. We believe that fantasy sports should be accessible to everyone, without financial barriers or pay-to-win mechanics.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Our platform is built on three core principles: it's completely free, entirely skill-based, and totally transparent. No hidden fees, no premium tiers, no luck-based mechanics — just pure cricket strategy and competition.

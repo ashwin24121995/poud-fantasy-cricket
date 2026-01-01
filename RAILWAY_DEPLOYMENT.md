@@ -1,6 +1,6 @@
-# Railway Deployment Guide for POUD Fantasy Sports
+# Railway Deployment Guide for POUD POUD
 
-This guide will walk you through deploying the POUD Fantasy Sports platform to Railway with GitHub integration.
+This guide will walk you through deploying the POUD POUD platform to Railway with GitHub integration.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ This guide will walk you through deploying the POUD Fantasy Sports platform to R
 ```bash
 git init
 git add .
-git commit -m "Initial commit: POUD Fantasy Sports platform"
+git commit -m "Initial commit: POUD POUD platform"
 ```
 
 2. Create a new repository on GitHub (e.g., `rostermindsports`)
@@ -304,4 +304,4 @@ If a deployment causes issues:
 - [ ] Set up monitoring and alerts
 - [ ] Enable auto-deploy from GitHub
 
-Your POUD Fantasy Sports platform is now live on Railway! 🚀
+Your POUD POUD platform is now live on Railway! 🚀

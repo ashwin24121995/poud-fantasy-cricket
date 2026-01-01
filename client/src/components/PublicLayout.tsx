@@ -237,7 +237,7 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
           <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} POUD INFRASTRUCTURES PRIVATE LIMITED — Skill. Strategy. Glory.</p>
             <p className="mt-2">
-              <strong>Disclaimer:</strong> POUD Fantasy Sports is a completely free-to-play, skill-based fantasy platform. No registration fees, subscriptions, or monetary rewards.
+              <strong>Disclaimer:</strong> POUD is a completely free-to-play, skill-based fantasy platform. No registration fees, subscriptions, or monetary rewards.
             </p>
             <p className="mt-1">
               Available to users aged <strong>18+</strong> within eligible regions. Not available in Andhra Pradesh, Assam, Odisha, Telangana, Nagaland, Sikkim, and Tamil Nadu.

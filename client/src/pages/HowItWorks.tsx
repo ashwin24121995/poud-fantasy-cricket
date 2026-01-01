@@ -44,7 +44,7 @@ export default function HowItWorks() {
                 ⚙️ How Does POUD Fantasy Work?
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                POUD Fantasy Sports is a web-based platform where your cricket expertise drives everything. There are no payments, no premium upgrades, and no chance-based elements. All features are free and accessible from the moment you join.
+                POUD is a web-based platform where your cricket expertise drives everything. There are no payments, no premium upgrades, and no chance-based elements. All features are free and accessible from the moment you join.
               </p>
               <ol className="space-y-3 text-muted-foreground pl-6">
                 <li className="leading-relaxed">
@@ -77,7 +77,7 @@ export default function HowItWorks() {
                 🧠 Strategy Over Chance — Always
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                POUD Fantasy Sports is built entirely on skill. Every point you earn is the result of your decisions — from team selection to captaincy choices. There are no random outcomes, no hidden mechanics, and no optional boosts.
+                POUD is built entirely on skill. Every point you earn is the result of your decisions — from team selection to captaincy choices. There are no random outcomes, no hidden mechanics, and no optional boosts.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Your results are determined solely by how well you know the game and how thoughtfully you build your fantasy XI.
@@ -113,7 +113,7 @@ export default function HowItWorks() {
                 📊 How Points Are Scored
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                On POUD Fantasy Sports, your score is driven entirely by the real-world match performance of your selected players. Our scoring system is fully transparent — no hidden rules, no random bonuses, and no unpredictable outcomes.
+                On POUD, your score is driven entirely by the real-world match performance of your selected players. Our scoring system is fully transparent — no hidden rules, no random bonuses, and no unpredictable outcomes.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 Every run scored, wicket taken, or catch made contributes directly to your total. Here's how your players earn points:
@@ -173,7 +173,7 @@ export default function HowItWorks() {
                 🛡️ Fair Play & Integrity
               </h2>
               <p className="text-muted-foreground leading-relaxed">
-                POUD Fantasy Sports is a skill-first platform — not a game of chance, not a money-driven app, and not a rewards-based competition. Every user plays on the exact same terms, with no paid advantages or hidden mechanics.
+                POUD is a skill-first platform — not a game of chance, not a money-driven app, and not a rewards-based competition. Every user plays on the exact same terms, with no paid advantages or hidden mechanics.
               </p>
               <p className="text-muted-foreground leading-relaxed">
                 To protect fairness and honest play, we've put strong safeguards in place across all contests. These systems ensure that only genuine, strategic users compete — and that no one gains unfair advantage through loopholes or tricks.

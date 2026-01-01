@@ -1,4 +1,4 @@
-# API Integration Guide for POUD Fantasy Sports
+# API Integration Guide for POUD POUD
 
 This document outlines how to integrate the external cricket match data API once the API credentials are provided.
 

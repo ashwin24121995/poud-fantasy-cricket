@@ -62,7 +62,7 @@ export default function Contact() {
               Whether you have questions about how POUD works, need help with your account, want to report a technical issue, or have suggestions for improving our platform, we'd love to hear from you.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              Our support team is dedicated to ensuring you have the best possible experience on POUD Fantasy Sports. We take all feedback seriously and use it to continuously improve our platform.
+              Our support team is dedicated to ensuring you have the best possible experience on POUD. We take all feedback seriously and use it to continuously improve our platform.
             </p>
 
             <div className="space-y-4 pt-4">

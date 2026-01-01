@@ -1,10 +1,10 @@
-# 🏏 POUD Fantasy Sports
+# 🏏 POUD POUD
 
 **POUD INFRASTRUCTURES PRIVATE LIMITED**
 
 *India's premier 100% free, skill-only fantasy cricket platform*
 
-POUD Fantasy Sports is a modern web application built with Node.js, Express, React, and tRPC that allows cricket fans to create fantasy teams, join contests, and compete based purely on skill—no payments, no luck, just strategy.
+POUD POUD is a modern web application built with Node.js, Express, React, and tRPC that allows cricket fans to create fantasy teams, join contests, and compete based purely on skill—no payments, no luck, just strategy.
 
 ---
 
@@ -359,7 +359,7 @@ Proprietary - All rights reserved
 - **No Mock Data:** All data will be real once API is integrated
 - **Free Forever:** Platform is completely free with no monetization
 - **Skill-Based:** No luck or random elements in gameplay
-- **Compliant:** Follows Indian fantasy sports regulations
+- **Compliant:** Follows Indian fantasy cricket regulations
 
 ---
 

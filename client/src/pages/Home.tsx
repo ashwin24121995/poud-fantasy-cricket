@@ -63,7 +63,7 @@ export default function Home() {
                 <span className="text-primary">Where Skill Rules the Game</span>
               </h1>
               <p className="text-lg text-muted-foreground">
-                Welcome to <strong>POUD Fantasy Sports</strong>—India's premier fantasy cricket platform built entirely on skill. No payments. No luck. No ads. Just strategy, knowledge, and pure competition.
+                Welcome to <strong>POUD</strong>—India's premier fantasy cricket platform built entirely on skill. No payments. No luck. No ads. Just strategy, knowledge, and pure competition.
               </p>
 
               <ul className="space-y-4">
@@ -174,7 +174,7 @@ export default function Home() {
         <div className="container">
           <div className="text-center max-w-3xl mx-auto mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Why Choose POUD Fantasy Sports?
+              Why Choose POUD?
             </h2>
             <div className="h-1 w-20 bg-primary mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-muted-foreground">

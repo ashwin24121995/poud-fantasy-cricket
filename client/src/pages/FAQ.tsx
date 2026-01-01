@@ -92,7 +92,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-muted-foreground">
-            Everything you need to know about POUD Fantasy Sports
+            Everything you need to know about POUD
           </p>
         </div>
 
