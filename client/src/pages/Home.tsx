@@ -26,22 +26,17 @@ import {
 export default function Home() {
   const { isAuthenticated } = useAuth();
   const [gatePass, setGatePass] = useState<boolean>(false);
-  const [language, setLanguage] = useState<"en" | "hi">("en");
 
   // Check if user has passed the gate before
   useEffect(() => {
     const passed = localStorage.getItem("ageGatePassed");
-    const savedLang = localStorage.getItem("preferredLanguage") as "en" | "hi" | null;
     if (passed === "true") {
       setGatePass(true);
-      if (savedLang) setLanguage(savedLang);
     }
   }, []);
 
-  const handleGatePass = (selectedLanguage: "en" | "hi") => {
+  const handleGatePass = () => {
     localStorage.setItem("ageGatePassed", "true");
-    localStorage.setItem("preferredLanguage", selectedLanguage);
-    setLanguage(selectedLanguage);
     setGatePass(true);
   };
 

@@ -117,3 +117,12 @@
 - [x] Update error messages and disclaimers
 - [x] Test all pages
 - [x] Create final checkpoint
+## Phase 15: Add Legal Company Information
+- [x] Add company address to footer
+- [x] Add CIN (U45209HR2019PTC081289)
+- [x] Add PAN (AAKCP6451F)
+- [x] Add TAN (RTKP10324G)
+- [x] Remove English/Hindi language selection step
+- [x] Make age gate go directly to age verification
+- [x] Test all changes
+- [x] Create checkpoint

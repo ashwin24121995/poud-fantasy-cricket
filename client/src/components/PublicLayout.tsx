@@ -221,9 +221,9 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
             <div>
               <h6 className="font-semibold mb-3">Contact</h6>
               <div className="space-y-2 text-sm text-muted-foreground">
-                <p>A-403, Prathmesh Tower</p>
-                <p>Lower Parel West, Mumbai</p>
-                <p>Maharashtra 400013, India</p>
+                <p>C/O NARAYAN SINGH</p>
+                <p>DERA MUNAK, KARNAL</p>
+                <p>Karnal, Haryana 132040, India</p>
                 <p className="pt-2">
                   <a href="mailto:support@poud.com" className="hover:text-primary transition-colors">
                     support@poud.com
@@ -236,6 +236,9 @@ export default function PublicLayout({ children }: PublicLayoutProps) {
           {/* Copyright */}
           <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
             <p>© {new Date().getFullYear()} POUD INFRASTRUCTURES PRIVATE LIMITED — Skill. Strategy. Glory.</p>
+            <p className="mt-2 text-xs">
+              CIN: U45209HR2019PTC081289 | PAN: AAKCP6451F | TAN: RTKP10324G
+            </p>
             <p className="mt-2">
               <strong>Disclaimer:</strong> POUD is a completely free-to-play, skill-based fantasy platform. No registration fees, subscriptions, or monetary rewards.
             </p>
