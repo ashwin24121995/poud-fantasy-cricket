@@ -6,7 +6,7 @@ A standalone Node.js + Express + React fantasy cricket application ready for dep
 
 - ✅ JWT-based authentication (email/password)
 - ✅ MySQL database with Sequelize ORM
-- ✅ React frontend with Tailwind CSS
+- ✅ React 18 frontend with Tailwind CSS
 - ✅ RESTful API architecture
 - ✅ Responsive design
 - ✅ POUD branding throughout
@@ -20,7 +20,7 @@ A standalone Node.js + Express + React fantasy cricket application ready for dep
 - bcrypt for password hashing
 
 **Frontend:**
-- React 19
+- React 18
 - React Router v6
 - Axios for API calls
 - Tailwind CSS for styling
@@ -100,7 +100,6 @@ npm run dev
 Backend will run on http://localhost:5000
 
 ### Frontend Setup
-
 1. Navigate to client directory:
 ```bash
 cd client
@@ -147,78 +146,76 @@ git branch -M main
 git push -u origin main
 ```
 
-### Step 2: Deploy Backend to Railway
+### Step 2: Add MySQL Database on Railway
 
 1. Go to [railway.app](https://railway.app) and sign in
-2. Click "New Project" → "Deploy from GitHub repo"
-3. Select your `poud` repository
-4. Railway will detect Node.js and deploy automatically
+2. Click "New Project" → "Provision MySQL"
+3. Railway will create a MySQL instance
+4. Click on the MySQL service to view connection details
+5. Copy the **MYSQL_PUBLIC_URL** (format: `mysql://root:password@host:port/railway`)
 
-### Step 3: Add MySQL Database
+### Step 3: Deploy Backend to Railway
 
-1. In your Railway project, click "New" → "Database" → "Add MySQL"
-2. Railway will create a MySQL instance and provide connection details
+1. In your Railway project, click "New" → "GitHub Repo"
+2. Select your `poud-fantasy-cricket` repository
+3. Railway will detect Node.js and start deployment
 
 ### Step 4: Configure Environment Variables
 
-In Railway project settings, add these variables:
+In Railway backend service settings → Variables, add:
 
 ```
-PORT=5000
-DATABASE_URL=${MYSQLURL}
-JWT_SECRET=your-super-secret-jwt-key-change-this-to-something-random
+DATABASE_URL=${{MySQL.MYSQL_PUBLIC_URL}}
+JWT_SECRET=your-super-secret-jwt-key-change-this-to-something-random-and-secure
 NODE_ENV=production
+PORT=5000
 ```
 
-Note: `${MYSQLURL}` is automatically provided by Railway's MySQL service.
+**Important:** Railway automatically provides `${{MySQL.MYSQL_PUBLIC_URL}}` when you have a MySQL service in the same project. This references your Railway MySQL connection string.
 
 ### Step 5: Run Database Migration
 
+The application automatically runs migrations on startup. If you need to run manually:
+
 1. In Railway, go to your backend service
-2. Click "Settings" → "Deploy" → "Custom Start Command"
-3. Add: `node server/migrate.js && node server/index.js`
+2. Open the service shell/terminal
+3. Run: `node server/migrate.js`
 
-This will run migrations before starting the server.
-
-### Step 6: Deploy Frontend
-
-Option A: Deploy to Railway (Recommended)
-
-1. In Railway, click "New" → "GitHub Repo" → Select same repository
-2. Set root directory to `/client`
-3. Add environment variable:
-```
-VITE_API_URL=https://your-backend-url.railway.app/api
-```
-4. Railway will build and deploy the frontend
-
-Option B: Deploy to Vercel/Netlify
-
-1. Connect your GitHub repo to Vercel/Netlify
-2. Set build settings:
-   - Build command: `cd client && npm install && npm run build`
-   - Output directory: `client/dist`
-3. Add environment variable:
-   - `VITE_API_URL`: Your Railway backend URL
-
-### Step 7: Update CORS Settings
-
-After deployment, update `server/index.js` CORS configuration with your frontend URL:
-
-```javascript
-app.use(cors({
-  origin: ['https://your-frontend-url.railway.app'],
-  credentials: true
-}));
+Or update the start command in `package.json`:
+```json
+"start": "node server/migrate.js && node server/index.js"
 ```
 
-## API Endpoints
+### Step 6: Deploy Frontend (Same Railway Project)
 
-### Authentication
-- `POST /api/auth/register` - Register new user
-- `POST /api/auth/login` - Login user
-- `POST /api/auth/logout` - Logout user
-- `GET /api/auth/me` - Get current user (requires auth)
+Railway will automatically build and serve the frontend from the `/client` directory using the build configuration in `railway.json`.
+
+The frontend will be available at your Railway deployment URL.
+
+### Step 7: Verify Deployment
+
+1. Check Railway logs for successful database connection
+2. Visit your Railway URL to see the POUD homepage
+3. Test user registration and login
+
+## Railway Configuration
+
+The project includes `railway.json` with optimized build settings:
+
+```json
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "npm install && cd client && npm install && npm run build"
+  },
+  "deploy": {
+    "startCommand": "node server/migrate.js && node server/index.js",
+    "restartPolicyType": "ON_FAILURE",
+    "restartPolicyMaxRetries": 10
+  }
+}
+```
 
 ## Environment Variables
 
@@ -235,6 +232,8 @@ NODE_ENV=production
 VITE_API_URL=https://your-backend-url/api
 ```
 
+**Note:** On Railway, the frontend uses relative API paths, so `VITE_API_URL` is set to `/api` in production.
+
 ## Database Schema
 
 The application uses the following tables:
@@ -246,6 +245,24 @@ The application uses the following tables:
 - `contests` - Fantasy contests
 - `contest_entries` - Contest participations
 - `player_stats` - Player statistics
+- `leaderboard` - User rankings
+
+## API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - Register new user
+- `POST /api/auth/login` - Login user
+- `POST /api/auth/logout` - Logout user
+- `GET /api/auth/me` - Get current user (requires auth)
+
+### Matches
+- `GET /api/matches` - Get all matches
+- `GET /api/matches/live` - Get live matches
+- `GET /api/matches/upcoming` - Get upcoming matches
+
+### Players
+- `GET /api/players` - Get all players
+- `GET /api/players/:id` - Get player details
 
 ## Security Features
 
@@ -256,6 +273,17 @@ The application uses the following tables:
 - ✅ SQL injection protection (Sequelize ORM)
 - ✅ XSS protection
 
+## Cricket API Integration (Coming Soon)
+
+The application is ready to integrate with cricket data APIs. The following sections are prepared:
+- **Live Matches** - Real-time match scores and updates
+- **Upcoming Matches** - Scheduled matches with countdown timers
+
+To integrate:
+1. Obtain API credentials from your cricket data provider
+2. Add API endpoints in `server/routes/matches.js`
+3. Update frontend components to fetch real data
+
 ## Future Enhancements
 
 - [ ] Integrate cricket data API
@@ -264,13 +292,30 @@ The application uses the following tables:
 - [ ] Add contest management
 - [ ] Email verification
 - [ ] Password reset functionality
-- [ ] Admin panel
+- [ ] Payment gateway integration
+
+## Troubleshooting
+
+### Database Connection Issues
+- Verify `DATABASE_URL` is correctly set in Railway environment variables
+- Check Railway MySQL service is running
+- Ensure connection string format: `mysql://user:password@host:port/database`
+
+### Build Failures
+- Check Node.js version (requires 18+)
+- Verify all dependencies are in `package.json`
+- Review Railway build logs for specific errors
+
+### Frontend Not Loading
+- Verify build completed successfully in Railway logs
+- Check `client/dist` directory was created during build
+- Ensure static file serving is configured in `server/index.js`
 
 ## Support
 
 For issues or questions:
 - Email: support@poud.com
-- GitHub Issues: https://github.com/yourusername/poud/issues
+- GitHub Issues: https://github.com/ashwin24121995/poud-fantasy-cricket/issues
 
 ## License
 
