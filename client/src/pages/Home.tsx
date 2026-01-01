@@ -691,11 +691,7 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground">
-              💡 Live match data will be populated when API is integrated
-            </p>
-          </div>
+
         </div>
       </section>
 
@@ -791,11 +787,7 @@ export default function Home() {
             </Card>
           </div>
 
-          <div className="text-center mt-8">
-            <p className="text-sm text-muted-foreground">
-              💡 Upcoming match data will be populated when API is integrated
-            </p>
-          </div>
+
         </div>
       </section>
 
