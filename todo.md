@@ -152,3 +152,19 @@
 - [x] Remove "💡 Live match data will be populated when API is integrated" message
 - [x] Remove "💡 Upcoming match data will be populated when API is integrated" message
 - [x] Create checkpoint
+
+## Phase 20: Rebuild as Standalone Application (No Manus Dependencies)
+- [ ] Create new standalone project structure
+- [ ] Set up Express.js backend with REST APIs
+- [ ] Implement JWT-based email/password authentication
+- [ ] Set up MySQL database with Sequelize ORM
+- [ ] Migrate all database schemas to Sequelize models
+- [ ] Convert tRPC routers to REST API endpoints
+- [ ] Rebuild React frontend with standard fetch/axios
+- [ ] Migrate all pages and components
+- [ ] Preserve POUD branding and all content
+- [ ] Set up environment variables for Railway
+- [ ] Create GitHub repository setup guide
+- [ ] Create Railway deployment guide
+- [ ] Test complete application
+- [ ] Create final deliverable

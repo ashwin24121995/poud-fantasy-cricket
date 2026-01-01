@@ -80,9 +80,11 @@ export default function Home() {
               <div className="flex flex-wrap gap-4">
                 {!isAuthenticated ? (
                   <>
-                    <Button size="lg" className="bg-gradient-to-r from-primary to-orange-500 hover:from-primary/90 hover:to-orange-500/90">
-                      <UserPlus className="mr-2 h-5 w-5" />
-                      Register Now
+                    <Button size="lg" className="bg-gradient-to-r from-primary to-orange-500 hover:from-primary/90 hover:to-orange-500/90" asChild>
+                      <a href={getLoginUrl()}>
+                        <UserPlus className="mr-2 h-5 w-5" />
+                        Register Now
+                      </a>
                     </Button>
                     <Button size="lg" variant="outline" asChild>
                       <a href={getLoginUrl()}>
