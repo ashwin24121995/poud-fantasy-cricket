@@ -126,3 +126,9 @@
 - [x] Make age gate go directly to age verification
 - [x] Test all changes
 - [x] Create checkpoint
+
+## Phase 16: Remove Age Gate
+- [x] Remove age gate verification from Home page
+- [x] Allow direct access to website without verification
+- [x] Test all pages work without age gate
+- [x] Create checkpoint

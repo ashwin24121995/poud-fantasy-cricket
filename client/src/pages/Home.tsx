@@ -1,10 +1,10 @@
 import { Link } from "wouter";
-import { useState, useEffect } from "react";
+
 import { useAuth } from "@/_core/hooks/useAuth";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import PublicLayout from "@/components/PublicLayout";
-import AgeGate from "@/components/AgeGate";
+
 import { getLoginUrl } from "@/const";
 import {
   Trophy,
@@ -25,24 +25,7 @@ import {
 
 export default function Home() {
   const { isAuthenticated } = useAuth();
-  const [gatePass, setGatePass] = useState<boolean>(false);
 
-  // Check if user has passed the gate before
-  useEffect(() => {
-    const passed = localStorage.getItem("ageGatePassed");
-    if (passed === "true") {
-      setGatePass(true);
-    }
-  }, []);
-
-  const handleGatePass = () => {
-    localStorage.setItem("ageGatePassed", "true");
-    setGatePass(true);
-  };
-
-  if (!gatePass) {
-    return <AgeGate onPass={handleGatePass} />;
-  }
 
   return (
     <PublicLayout>
