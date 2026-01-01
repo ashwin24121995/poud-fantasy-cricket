@@ -132,3 +132,10 @@
 - [x] Allow direct access to website without verification
 - [x] Test all pages work without age gate
 - [x] Create checkpoint
+
+## Phase 17: Expand Home Page with All Original Content
+- [x] Review original PHP home page sections
+- [x] Add all missing sections to Home.tsx
+- [x] Ensure no content is shortened or removed
+- [x] Test complete home page
+- [x] Create checkpoint
