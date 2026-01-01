@@ -608,35 +608,193 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
+      {/* Live Matches Section */}
       <section className="py-20 bg-white">
         <div className="container">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">What Our Players Say</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">🔴 Live Matches</h2>
             <div className="w-16 h-1 bg-gradient-to-r from-primary to-orange-500 mx-auto mb-4 rounded-full"></div>
             <p className="text-lg text-muted-foreground">
-              Real feedback from real users—updated regularly.
+              Join ongoing matches and compete in real-time
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { quote: "Finally, a fantasy platform that's truly skill-based. No gimmicks—just pure cricket IQ.", author: "Raj, Pune" },
-              { quote: "100% free, zero ads, and the live stats are amazing. I'm hooked!", author: "Neha, Delhi" },
-              { quote: "Transparent scoring and fair contests—this is fantasy done right.", author: "Aakash, Bengaluru" },
-              { quote: "No financial risk, just skill. Perfect for cricket nerds like me!", author: "Priya, Mumbai" },
-              { quote: "The drafting tools with live analytics give me a real edge.", author: "Vikram, Chennai" },
-              { quote: "Love the private contests—challenge friends hassle-free.", author: "Anjali, Kolkata" },
-              { quote: "Regional leaderboards keep me competitive locally.", author: "Rohit, Hyderabad" },
-              { quote: "Responsive support and zero tracking—exactly what I want.", author: "Sneha, Jaipur" },
-            ].map((testimonial, index) => (
-              <Card key={index} className="border-2">
-                <CardContent className="pt-6 text-center space-y-4">
-                  <p className="text-muted-foreground italic">"{testimonial.quote}"</p>
-                  <p className="font-semibold text-primary">— {testimonial.author}</p>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Placeholder cards - will be populated with API data */}
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">● LIVE</span>
+                  <span className="text-sm text-muted-foreground">T20</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team A</span>
+                    <span className="text-lg font-bold">145/6 (15.2)</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team B</span>
+                    <span className="text-sm text-muted-foreground">Yet to bat</span>
+                  </div>
+                </div>
+                <Button className="w-full" disabled>
+                  <Clock className="mr-2 h-4 w-4" />
+                  Match In Progress
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">● LIVE</span>
+                  <span className="text-sm text-muted-foreground">ODI</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team C</span>
+                    <span className="text-lg font-bold">278/8 (48.5)</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team D</span>
+                    <span className="text-sm text-muted-foreground">Yet to bat</span>
+                  </div>
+                </div>
+                <Button className="w-full" disabled>
+                  <Clock className="mr-2 h-4 w-4" />
+                  Match In Progress
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3 py-1 bg-red-100 text-red-600 text-xs font-semibold rounded-full">● LIVE</span>
+                  <span className="text-sm text-muted-foreground">TEST</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team E</span>
+                    <span className="text-lg font-bold">412/7d</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team F</span>
+                    <span className="text-lg font-bold">189/4 (65.3)</span>
+                  </div>
+                </div>
+                <Button className="w-full" disabled>
+                  <Clock className="mr-2 h-4 w-4" />
+                  Match In Progress
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-sm text-muted-foreground">
+              💡 Live match data will be populated when API is integrated
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Upcoming Matches Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">📅 Upcoming Matches</h2>
+            <div className="w-16 h-1 bg-gradient-to-r from-primary to-orange-500 mx-auto mb-4 rounded-full"></div>
+            <p className="text-lg text-muted-foreground">
+              Create your team and join contests before the match starts
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Placeholder cards - will be populated with API data */}
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full">UPCOMING</span>
+                  <span className="text-sm text-muted-foreground">T20</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team G</span>
+                    <span className="text-sm text-muted-foreground">vs</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team H</span>
+                  </div>
+                </div>
+                <div className="text-center py-2 bg-orange-50 rounded-lg">
+                  <p className="text-sm font-semibold text-primary">Starts in 2 hours</p>
+                  <p className="text-xs text-muted-foreground">Today, 7:30 PM IST</p>
+                </div>
+                <Button className="w-full">
+                  <Users className="mr-2 h-4 w-4" />
+                  Create Team
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full">UPCOMING</span>
+                  <span className="text-sm text-muted-foreground">ODI</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team I</span>
+                    <span className="text-sm text-muted-foreground">vs</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team J</span>
+                  </div>
+                </div>
+                <div className="text-center py-2 bg-orange-50 rounded-lg">
+                  <p className="text-sm font-semibold text-primary">Starts tomorrow</p>
+                  <p className="text-xs text-muted-foreground">Jan 2, 2:00 PM IST</p>
+                </div>
+                <Button className="w-full">
+                  <Users className="mr-2 h-4 w-4" />
+                  Create Team
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 space-y-4">
+                <div className="flex items-center justify-between">
+                  <span className="px-3 py-1 bg-green-100 text-green-600 text-xs font-semibold rounded-full">UPCOMING</span>
+                  <span className="text-sm text-muted-foreground">T20</span>
+                </div>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team K</span>
+                    <span className="text-sm text-muted-foreground">vs</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold">Team L</span>
+                  </div>
+                </div>
+                <div className="text-center py-2 bg-orange-50 rounded-lg">
+                  <p className="text-sm font-semibold text-primary">Starts in 5 hours</p>
+                  <p className="text-xs text-muted-foreground">Today, 10:30 PM IST</p>
+                </div>
+                <Button className="w-full">
+                  <Users className="mr-2 h-4 w-4" />
+                  Create Team
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-8">
+            <p className="text-sm text-muted-foreground">
+              💡 Upcoming match data will be populated when API is integrated
+            </p>
           </div>
         </div>
       </section>

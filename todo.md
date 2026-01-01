@@ -139,3 +139,11 @@
 - [x] Ensure no content is shortened or removed
 - [x] Test complete home page
 - [x] Create checkpoint
+
+## Phase 18: Update Home Page - Remove Testimonials, Add Match Sections
+- [x] Remove "What Our Players Say" testimonials section
+- [x] Add "Live Matches" section with placeholder UI
+- [x] Add "Upcoming Matches" section with placeholder UI
+- [x] Prepare sections for API integration
+- [x] Test updated home page
+- [x] Create checkpoint
